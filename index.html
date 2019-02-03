@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+    <style>
+        .wrapper {
+            margin: 0 auto;
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+        }
+        pre {
+            position: relative;
+            max-width: 800px;
+            padding: 30px 15px;
+            background: #f7f7f7;
+            word-break: break-all;
+            word-wrap: break-word;
+            white-space: pre;
+            font-size: 14px;
+            color: #666666;
+            border-left: 3px solid #7b7b7b;
+        }
+        pre:before {
+            content: "Markup";
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-size: 14px;
+            font-weight: bold;
+            -webkit-font-smoothing: antialiased;
+            font-family: Helvetica, Arial, sans-serif;
+            text-transform: uppercase;
+        }
+
+        button {
+            outline: none;
+            background-color: #3d6284;
+            border-radius: 5px;
+            color: white;
+        }
+    </style>
+<link href="style.3ca721e9b1de95faa908.css?d30d9dbaa40687e5b0da" rel="stylesheet"></head>
+<body>
+    <div id="app" class="wrapper">
+        <h1>Accordion solution</h1>
+        <div>
+            <form>
+                <span>Click the button to add content from MyJSON.com >> </span>
+                <button class="js-submit" type="submit">Add</button>
+            </form>
+        </div>
+
+        <dl>
+            <dt>Section 1</dt>
+            <dd>
+                <p>Section 1 Content...</p>
+            </dd>
+            <dt>Section 2</dt>
+            <dd>
+                <p>Section 2 Content...</p>
+            </dd>
+            <dt>Section 3</dt>
+            <dd>
+                <p>Section 3 Content...</p>
+            </dd>
+        </dl>
+    </div>
+<script type="text/javascript" src="main.d30d9dbaa40687e5b0da.js?d30d9dbaa40687e5b0da"></script></body>
+</html>
