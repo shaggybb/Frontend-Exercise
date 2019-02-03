@@ -2,6 +2,6 @@ import FromArrayToListOfAccordionValueObjectsMapper from './FromArrayToListOfAcc
 
 export default class AccordionMappersFactory {
     static fromArrayToListOfAccordionValueObjects = () => {
-        return new FromArrayToListOfAccordionValueObjectsMapper()
-    }
+        return new FromArrayToListOfAccordionValueObjectsMapper();
+    };
 }
