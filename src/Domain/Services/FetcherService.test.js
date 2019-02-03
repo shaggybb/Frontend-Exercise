@@ -1,6 +1,6 @@
 import FetcherService from '../Services/FetcherService';
 
-describe('MyJSONAccordionRepository', () => {
+describe('FetcherService', () => {
     test('Should instanciate', () => {
         expect(() => {
             new FetcherService();
