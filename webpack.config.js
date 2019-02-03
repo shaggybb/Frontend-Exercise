@@ -44,7 +44,9 @@ module.exports = {
         ]
     },
     plugins: [
-        new CleanWebpackPlugin('dist'),
+        new CleanWebpackPlugin('dist', {
+            exclude: '.gitkeep'
+        }),
         new MiniCssExtractPlugin({
             filename: 'style.[contenthash].css'
         }),
