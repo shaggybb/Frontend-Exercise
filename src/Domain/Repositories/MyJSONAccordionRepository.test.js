@@ -16,15 +16,17 @@ describe('MyJSONAccordionRepository', () => {
 
         const fetcher = new FetcherService();
         const mapper = new FromArrayToListOfAccordionValueObjectsMapper();
-
-        const mockSuccessResponse = {};
-        const mockJsonPromise = Promise.resolve(mockSuccessResponse);
+        const mockJsonPromise = Promise.resolve([
+            { }
+        ]);
         const mockFetcherPromise = Promise.resolve({
             json: () => mockJsonPromise
         });
 
-        jest.spyOn(fetcher, 'execute').mockImplementation(() => mockFetcherPromise);
-        jest.spyOn(mapper, 'transform').mockImplementation(() => []);
+        jest.spyOn(fetcher, 'execute').mockImplementation(
+            () => mockFetcherPromise
+        );
+        jest.spyOn(mapper, 'transform').mockImplementation(() => [ {a:1} ]);
 
         const instance = new MyJSONAccordionRepository({
             config,
@@ -32,9 +34,10 @@ describe('MyJSONAccordionRepository', () => {
             mapper
         });
 
-        await expect(instance.all()).toEqual(new Promise(resolve => {}));
-
-        fetcher.execute.mockClear();
-        mapper.transform.mockClear();
+        instance.all().then(data => {
+            expect(data).toEqual([ {a:1} ]);
+            fetcher.execute.mockClear();
+            mapper.transform.mockClear();
+        });
     });
 });
