@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+@import '~normalize.css/normalize.css';
+
+:root {
+  /* Brand Colors */
+  --brand-primary-0: rgb(48, 146, 62);
+  --brand-primary-1: rgb(229, 242, 208);
+  --brand-primary-2: rgb(229, 242, 226);
+
+  /* Secondary brand colors */
+  --brand-secondary-2: #4d5974;
+
+  /* Neutral colors */
+  --neutral-0: rgb(194, 222, 160);
+
+  /* Basic colors */
+  --white: #fff;
+  --black: #000;
+
+  /* Borders */
+  --border-0: 1px solid rgb(194, 222, 160);
+  --border-1: 1px solid rgb(48, 146, 62);
+  --border-2: 1px solid rgb(229, 242, 208);
+
+  --body-fontFamily: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI" , Roboto, "Helvetica Neue", Arial, sans-serif;
+  --body-backgroundColor: var(--white);
+  --body-color: var(--brand-secondary-2);
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--body-fontFamily);
+  background-color: var(--body-backgroundColor);
+  color: var(--body-color);
+}
