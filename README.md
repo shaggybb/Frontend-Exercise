@@ -46,12 +46,12 @@ The proof of concept works the next building and test tools:
 
 ```
 project
- |_ dist                  // Distro for production releasements
+ |_ dist                  // Production folder and used for gh-pages
  |_ src
-     |_ Domain            // Core business logic 
-     |_ Infrastructure    // Tool to run the app  
+     |_ Domain            // Core business logic
+     |_ Infrastructure  
         |_ Common         // Shared items accross components
-        |_ Components     // UI Components       
+        |_ Components     // UI Components
 ```
 
 ## How to run the app?
