@@ -75,6 +75,11 @@ $>npm run build
 ```
 > Then you can run index.html file at dist directory
 
+## How to publish a new github page
+```
+$>npm run publish 
+```
+
 ## How to test it?
 ```
 $>npm test
